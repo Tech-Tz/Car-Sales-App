@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UI.MVC;
+
+namespace CarSales.UI.ViewsParameter
+{
+    public class SharedViewParam : IViewParameter
+    {
+        public int EmployeeId { get; set; }
+
+        public SharedViewParam(int employeeId)  
+        {
+            EmployeeId = employeeId;
+        }   
+    }
+}
